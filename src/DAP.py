@@ -1,11 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the Excel file
+# Excel file
 file_path = 'data/Daniel.Noa-HamiltonCC-05.xlsx'
 data = pd.read_excel(file_path)
 
-# Clean the data by removing any rows that aren't needed (like headers and empty rows)
+# This cleans the data by removing any rows that aren't needed (like headers and empty rows)
 data_cleaned = data.dropna().reset_index(drop=True)
 
 # Extract the relevant columns: Class Name and Total Enrollment
